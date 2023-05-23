@@ -4,7 +4,7 @@ require('config.php');
 $method = strtolower($_SERVER['REQUEST_METHOD']);
 $path = $_SERVER['REQUEST_URI'];
 
-$url_base = "/cbc-api/api/";
+$url_base = "/cbc/api/";
 
 if (strpos($path, $url_base) === 0) {
     $path = substr($path, strlen($url_base));
